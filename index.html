@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>LET Vocabulary</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href=" https://w3id.org/xapi/let/">LET Vocabulary</a> </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#accessed">answered</a></li>
+                <li><a href="#attempted">attempted</a></li>
+                <li><a href="#completed">completed</a></li>
+                <li><a href="#loggedin">loggedin</a></li>
+                <li><a href="#clicked">clicked</a></li>
+                <li><a href="#commented">commented</a></li> 
+              </ul>
+            </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Types<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#assignment">assignment</a></li>
+                <li><a href="#question">question</a></li>
+                <li><a href="#application">application</a></li>
+                <li><a href="#resource">resource</a></li>
+                <li><a href="#thread">thread</a></li>
+                <li><a href="#forum">forum</a></li>
+              </ul>
+            </li>          
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extensions<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#subType">subType</a></li>
+              </ul>
+            </li>           
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recipes<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://registry.tincanapi.com/#profile/27">assessment</a></li>
+                 <li><a href="https://github.com/jiscdev/xapi/blob/master/recipes/login.md">login</a></li>
+                 <li><a href="#">interaction (TODO)</a></li>       
+                 <li><a href="https://github.com/adlnet/xapi-youtube">video</a></li>    
+              </ul>
+            </li> 
+          </ul>
+        </div>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+    
+    <div xmlns="http://www.w3.org/1999/xhtml" class="container" prefix="
+        dcterms: http://purl.org/dc/terms/
+        foaf: http://xmlns.com/foaf/0.1/
+        owl: http://www.w3.org/2002/07/owl#
+        prov: http://www.w3.org/ns/prov#
+        rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+        rdfs: http://www.w3.org/2000/01/rdf-schema#
+        skos: http://www.w3.org/2004/02/skos/core#
+        xapi: https://w3id.org/xapi/ontology#
+        xsd: http://www.w3.org/2001/XMLSchema#"> 
+
+    <!-- Vocabulary / Concept Scheme --> 
+    <div typeof="skos:ConceptScheme" about=" https://w3id.org/xapi/let/">
+        <div property="skos:prefLabel" lang="en" xml:lang="en" content="AcrossX Vocabulary">
+        <h2 class="page-header">LET Vocabulary</h2></div>
+        <div property="foaf:name" lang="en" xml:lang="en" content="xAPI Chinese CoP"><strong>Published by:</strong> <a href="http://xapi-cop.net/zh">xAPI LET CoP</a></div>  
+        <div property="dcterms:created" datatype="xsd:date" content="2015-12-13">Date Created: 2017-06-23</div>
+        <div property="dcterms:modified" datatype="xsd:date" content="2016-08-01">Last Modified: 2017-06-23</div>
+    </div>
+      
+        
+    <!-- Begin Verbs --> 
+    <h2 class="page-header">Verbs</h2>  
+      <div class="panel panel-default table-responsive" id="verbs">
+        <!-- Table Header -->
+        <table class="table table-hover">
+          <thead>
+            <tr class="info">
+              <th>Verb</th>
+              <th>Description</th>
+              <th>ID (IRI)</th>
+              <th>Vocabulary</th>
+            </tr>
+          </thead>
+      
+            
+        <tbody resource="https://w3id.org/xapi/adl/verbs/answered" id="answered">
+            <tr>
+            <td>answered</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor replied to a question, where the object is generally an activity representing the question. The text of the answer will often be included in the response inside result.	">Indicates the actor replied to a question, where the object is generally an activity representing the question. The text of the answer will often be included in the response inside result.</td>
+            <td><a href="https://w3id.org/xapi/adl/verbs/answered" target="_blank">https://w3id.org/xapi/adl/verbs/answered</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+            </tr>
+        </tbody>
+
+        <tbody resource="https://w3id.org/xapi/adl/verbs/attempted" id="attempted">
+            <tr>
+            <td>attempted</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor made an effort to access the object. An attempt statement without additional activities could be considered incomplete in some cases.">Indicates the actor made an effort to access the object. An attempt statement without additional activities could be considered incomplete in some cases.</td>
+            <td><a href="https://w3id.org/xapi/adl/verbs/attempted" target="_blank">https://w3id.org/xapi/adl/verbs/attempted</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+            </tr>
+      </tbody>    
+
+        <tbody resource="https://w3id.org/xapi/adl/verbs/completed" id="completed">
+            <tr>
+            <td>completed</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates that the actor has completed the object.">Indicates that the actor has completed the object.</td>
+            <td><a href="https://w3id.org/xapi/adl/verbs/completed" target="_blank">https://w3id.org/xapi/adl/verbs/completed</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+            </tr>
+      </tbody>
+
+    <tbody resource="https://w3id.org/xapi/adl/verbs/logged-in" id="loggedin">
+            <tr>
+            <td>loggedin</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor gained access to a system or service by identifying and authenticating with the credentials provided by the actor.">Indicates the actor gained access to a system or service by identifying and authenticating with the credentials provided by the actor.	</td>
+            <td><a href="https://w3id.org/xapi/adl/verbs/logged-in" target="_blank">https://w3id.org/xapi/adl/verbs/logged-in</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+            </tr>
+      </tbody>
+
+
+    <tbody resource="https://w3id.org/xapi/let/verbs/clicked" id="clicked">
+            <tr>
+            <td>clicked</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor clicked the object.">Indicates the actor clicked the object.</td>
+            <td><a href="https://w3id.org/xapi/let/verbs/clicked" target="_blank">https://w3id.org/xapi/let/verbs/clicked</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let" target="_blank">https://w3id.org/xapi/let</a></td>
+            </tr>
+      </tbody>
+
+    <tbody resource="https://w3id.org/xapi/adl/verbs/commented" id="commented">
+            <tr>
+            <td>commented</td>
+            <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor clicked the object.">Indicates the actor provided digital or written annotations on or about an object.</td>
+            <td><a href="https://w3id.org/xapi/adl/verbs/commented" target="_blank">https://w3id.org/xapi/adl/verbs/commented</a></td>
+            <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let" target="_blank">https://w3id.org/xapi/adl</a></td>
+            </tr>
+      </tbody>
+    
+        </table>
+        </div>
+    <!-- End Verbs -->   
+
+        
+        
+    <!-- Begin Activity Types -->   
+    <h2 class="page-header">Activity Types</h2>
+    <div class="panel panel-default table-responsive">
+      <!-- Table Header -->
+      <table class="table table-hover">
+        <thead>
+          <tr class="info">
+            <th>Acitivity Type</th>
+            <th>Description</th>
+            <th>ID (IRI)</th>
+            <th>Vocabulary</th>
+          </tr>
+        </thead>
+
+    <tbody resource="https://w3id.org/xapi/adl/ctivities/assessment" id="assessment">
+        <tr>
+          <td>assessment</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This term is used for assessments in digital form, to be distinguished from assessment in paper form.">This term is used for assessments in digital form, to be distinguished from assessment in paper form.</td>
+          <td><a href="https://w3id.org/xapi/adl/assessment" target="_blank"> https://w3id.org/xapi/adl/activities/assessment</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>  
+        
+        
+      <tbody resource="https://w3id.org/xapi/adl/activities/question" id="question">
+        <tr>
+          <td>question</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A question is typically part of an assessment and requires a response from the learner, a response that is then evaluated for correctness.">A question is typically part of an assessment and requires a response from the learner, a response that is then evaluated for correctness.</td>
+          <td><a href=" https://w3id.org/xapi/adl/activities/interaction" target="_blank"> https://w3id.org/xapi/adl/activities/question</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+
+    <tbody resource="http://activitystrea.ms/schema/1.0/application" id="application">
+        <tr>
+          <td>application</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Represents any kind of software application.">Represents any kind of software application.</td>
+          <td><a href="http://activitystrea.ms/schema/1.0/application" target="_blank">http://activitystrea.ms/schema/1.0/application</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="http://activitystrea.ms/schema/1.0/" target="_blank">http://activitystrea.ms/schema/1.0/</a></td>
+        </tr>
+      </tbody>
+
+    <tbody resource="https://w3id.org/xapi/let/activities/resource" id="resource">
+        <tr>
+          <td>resource</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A resource is a generic item that the actor may use for something. It could be a video, a text article, a device, etc. However, it is recommended to use resourceType extension">A resource is a generic item that the actor may use for something. It could be a video, a text article, a device, etc. However, it is recommended to use resourceType extension.</td>
+          <td><a href="https://w3id.org/xapi/let/activities/resource" target="_blank">https://w3id.org/xapi/let/activities/resource</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let" target="_blank">https://w3id.org/xapi/let</a></td>
+        </tr>
+      </tbody> 
+    
+    <tbody resource="https://w3id.org/xapi/let/activities/thread" id="thread">
+        <tr>
+          <td>thread</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Discussion Thread">Discussion Thread</td>
+          <td><a href="https://w3id.org/xapi/let/activities/thread" target="_blank">https://w3id.org/xapi/let/activities/thread</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let" target="_blank">https://w3id.org/xapi/let</a></td>
+        </tr>
+      </tbody>
+
+    <tbody resource="https://w3id.org/xapi/let/activities/forum" id="forum">
+        <tr>
+          <td>forum</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Discussion Thread">Discussion Forum</td>
+          <td><a href="https://w3id.org/xapi/let/activities/forum" target="_blank">https://w3id.org/xapi/let/activities/forum</a></td>
+          <td rel="xapi:referencedBy" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let" target="_blank">https://w3id.org/xapi/let</a></td>
+        </tr>
+      </tbody>     
+      </table> 
+      </div>
+    <!-- End Activity Types -->      
+
+      
+
+    <!-- Begin Extensions --> 
+    <h2 class="page-header">Extensions</h2>  
+    <div class="panel panel-default table-responsive"> 
+        <!-- Table Header -->
+        <table class="table table-hover">
+          <thead>
+            <tr class="info">
+              <th>Extension</th>
+              <th>Description</th>          
+              <th>ID (IRI)</th>
+              <th>Vocabulary</th>
+            </tr>
+          </thead>
+    
+          <tbody typeof="xapi:Extension" about="http://xapi.jisc.ac.uk/subType" id="subType">
+            <tr>
+              <td property="skos:prefLabel" lang="en" xml:lang="en" content="subType">subType</td>
+              <td property="skos:definition" lang="en" xml:lang="en" content="The subType extension should be used to identify the system type that is being logged into">The subType extension should be used to identify the system type that is being logged into.</td>
+              <td><a href="http://xapi.jisc.ac.uk/subType" target="_blank">http://xapi.jisc.ac.uk/subType</a></td>
+              <td rel="skos:inScheme" resource=" https://w3id.org/xapi/let/"><a href="http://xapi.jisc.ac.uk/" target="_blank">http://xapi.jisc.ac.uk/</a></td>
+            </tr>
+          </tbody>
+
+          <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/let/Extensions/resource" id="resourceType">
+            <tr>
+              <td property="skos:prefLabel" lang="en" xml:lang="en" content="subType">resourceType</td>
+              <td property="skos:definition" lang="en" xml:lang="en" content="The subType extension should be used to identify the system type that is being logged into">The subType extension should be used to identify the system type that is being logged into.</td>
+              <td><a href="https://w3id.org/xapi/let/Extensions/resource" target="_blank">https://w3id.org/xapi/let/Extensions/resource</a></td>
+              <td rel="skos:inScheme" resource=" https://w3id.org/xapi/let/"><a href="https://w3id.org/xapi/let/" target="_blank">https://w3id.org/xapi/let/</a></td>
+            </tr>
+          </tbody>       
+                                                                
+        </table>
+        </div>
+    <!-- End Extensions -->
+    </div>
+
+
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
